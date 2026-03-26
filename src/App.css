@@ -17,8 +17,7 @@
 .hero-actions,
 .hero-metrics,
 .feature-grid,
-.footer-inner,
-.footer-links {
+.footer-inner {
   display: flex;
   align-items: center;
 }
@@ -60,7 +59,6 @@
 }
 
 .nav-links a,
-.footer-links a,
 .text-link {
   color: #17314d;
   text-decoration: none;
@@ -72,7 +70,6 @@
 }
 
 .nav-links a:hover,
-.footer-links a:hover,
 .text-link:hover {
   color: #2d7fba;
 }
@@ -585,9 +582,28 @@
   color: #ffffff;
 }
 
+.footer-copy {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.footer-copy strong {
+  font-size: 1.05rem;
+}
+
 .footer-brand {
   display: flex;
   justify-content: center;
+}
+
+.footer-contact-link {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-contact-link:hover {
+  color: #ffffff;
 }
 
 .footer-logo {
@@ -595,14 +611,6 @@
   height: auto;
   display: block;
   opacity: 0.92;
-}
-
-.footer-links {
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 1100px) {
@@ -684,8 +692,7 @@
   }
 
   .hero-actions,
-  .hero-metrics,
-  .footer-links {
+  .hero-metrics {
     flex-direction: column;
     align-items: flex-start;
   }
